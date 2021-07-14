@@ -1,19 +1,19 @@
 package com.easyarch.using.entity;
 
-public class Controller {
+public class Controllers {
     private int cid;
     private String phone;
     private String password;
 
-    public Controller() {
+    public Controllers() {
     }
 
-    public Controller(String phone, String password) {
+    public Controllers(String phone, String password) {
         this.phone = phone;
         this.password = password;
     }
 
-    public Controller(int cid, String phone, String password) {
+    public Controllers(int cid, String phone, String password) {
         this.cid = cid;
         this.phone = phone;
         this.password = password;
