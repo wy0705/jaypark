@@ -1,4 +1,4 @@
-package com.easyarch.using.service;
+package com.easyarch.using.service.im;
 
 import com.easyarch.using.entity.User;
 
