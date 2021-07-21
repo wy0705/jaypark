@@ -1,9 +1,7 @@
 package com.easyarch.using.dao;
 
-import com.easyarch.using.entity.College;
 import com.easyarch.using.entity.Need;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.quartz.QuartzProperties;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;

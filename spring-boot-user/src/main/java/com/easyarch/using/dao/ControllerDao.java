@@ -1,14 +1,10 @@
 package com.easyarch.using.dao;
 
-import com.easyarch.using.entity.College;
 import com.easyarch.using.entity.Controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Repository;
-
-import java.sql.Statement;
 
 @Repository
 public class ControllerDao {

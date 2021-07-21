@@ -1,8 +1,6 @@
 package com.easyarch.using.dao;
 
-import com.easyarch.using.entity.College;
 import com.easyarch.using.entity.Position;
-import javafx.geometry.Pos;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;

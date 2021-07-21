@@ -4,9 +4,10 @@ import com.easyarch.using.dao.Com_posDao;
 import com.easyarch.using.entity.Com_pos;
 import com.easyarch.using.service.im.ICom_posservice;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class Com_posserviceImpl implements ICom_posservice {
     @Autowired
     private Com_posDao comPosDao;

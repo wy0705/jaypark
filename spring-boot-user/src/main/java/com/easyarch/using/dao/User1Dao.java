@@ -1,6 +1,5 @@
 package com.easyarch.using.dao;
 
-import com.easyarch.using.entity.College;
 import com.easyarch.using.entity.User1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -25,7 +24,7 @@ public class User1Dao {
     }
 
     public int insertUser1(User1 user1){
-        String sql="insert into user1 (phone,password,mid) values (?,?,?)";
+        String sql="insert into user (phone,password,mid) values (?,?,?)";
         return jdbcTemplate.update(sql,user1.getPhone(),user1.getPhone(),user1.getMid());
     }
 }
