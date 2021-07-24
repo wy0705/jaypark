@@ -16,8 +16,13 @@ public class User1ServiceImpl implements IUser1Seivice {
     }
 
     @Override
-    public User1 findByname(String name) {
-        return user1Dao.findByname(name);
+    public User1 findByPhone(String phone) {
+        return user1Dao.findByPhone(phone);
+    }
+
+    @Override
+    public User1 findByphoneAndpassword(String phone,String password) {
+        return user1Dao.findByphoneAndpasswoed(phone,password);
     }
 
     @Override

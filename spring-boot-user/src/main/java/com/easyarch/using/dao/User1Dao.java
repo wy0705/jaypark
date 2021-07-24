@@ -17,9 +17,15 @@ public class User1Dao {
                 new BeanPropertyRowMapper<>(User1.class));
     }
 
-    public User1 findByname(String name){
-        String sql="select uid,phone,password,mid from user where name=?";
-        return this.jdbcTemplate.queryForObject(sql, new Object[]{name},
+    public User1 findByPhone(String phone){
+        String sql="select uid,phone,password,mid from user where phone=?";
+        return this.jdbcTemplate.queryForObject(sql, new Object[]{phone},
+                new BeanPropertyRowMapper<>(User1.class));
+    }
+
+    public User1 findByphoneAndpasswoed(String phone,String password){
+        String sql="select uid,phone,password,mid from user where phone=? and passwoed=?";
+        return this.jdbcTemplate.queryForObject(sql, new Object[]{phone,password},
                 new BeanPropertyRowMapper<>(User1.class));
     }
 

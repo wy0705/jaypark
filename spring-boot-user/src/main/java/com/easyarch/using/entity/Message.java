@@ -3,32 +3,32 @@ package com.easyarch.using.entity;
 public class Message {
     private int mid;
     private String name;
-    private int age;
-    private String gender;
     private String email;
-    private int drivingyears;
-    private String vehicle;
+    private String birthday;
+    private String gender;
+    private int salary;
+    private String permanentAddress;
 
     public Message() {
     }
 
-    public Message(String name, int age, String gender, String email, int drivingyears, String vehicle) {
+    public Message(String name, String email, String birthday, String gender, int salary, String permanentAddress) {
         this.name = name;
-        this.age = age;
-        this.gender = gender;
         this.email = email;
-        this.drivingyears = drivingyears;
-        this.vehicle = vehicle;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.salary = salary;
+        this.permanentAddress = permanentAddress;
     }
 
-    public Message(int mid, String name, int age, String gender, String email, int drivingyears, String vehicle) {
+    public Message(int mid, String name, String email, String birthday, String gender, int salary, String permanentAddress) {
         this.mid = mid;
         this.name = name;
-        this.age = age;
-        this.gender = gender;
         this.email = email;
-        this.drivingyears = drivingyears;
-        this.vehicle = vehicle;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.salary = salary;
+        this.permanentAddress = permanentAddress;
     }
 
     public int getMid() {
@@ -47,12 +47,20 @@ public class Message {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getEmail() {
+        return email;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 
     public String getGender() {
@@ -63,27 +71,19 @@ public class Message {
         this.gender = gender;
     }
 
-    public String getEmail() {
-        return email;
+    public int getSalary() {
+        return salary;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setSalary(int salary) {
+        this.salary = salary;
     }
 
-    public int getDrivingyears() {
-        return drivingyears;
+    public String getPermanentAddress() {
+        return permanentAddress;
     }
 
-    public void setDrivingyears(int drivingyears) {
-        this.drivingyears = drivingyears;
-    }
-
-    public String getVehicle() {
-        return vehicle;
-    }
-
-    public void setVehicle(String vehicle) {
-        this.vehicle = vehicle;
+    public void setPermanentAddress(String permanentAddress) {
+        this.permanentAddress = permanentAddress;
     }
 }
